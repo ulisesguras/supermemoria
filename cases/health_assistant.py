@@ -16,8 +16,8 @@ Memory in action:
 
 from __future__ import annotations
 
-from remembrance import BaseAgent, AgentConfig
-from remembrance.memory.collective import CollectiveMemory
+from supermemoria import BaseAgent, AgentConfig
+from supermemoria.memory.collective import CollectiveMemory
 
 
 class HealthAgent(BaseAgent):

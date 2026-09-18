@@ -27,15 +27,15 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional
 
-from remembrance.memory.sensory import SensoryMemory
-from remembrance.memory.working import WorkingMemory
-from remembrance.memory.episodic import EpisodicMemory
-from remembrance.memory.semantic import SemanticMemory
-from remembrance.memory.procedural import ProceduralMemory
-from remembrance.memory.emotional import EmotionalMemory
-from remembrance.memory.prospective import ProspectiveMemory
-from remembrance.memory.collective import CollectiveMemory
-from remembrance.memory.strategic import StrategicMemory
+from supermemoria.memory.sensory import SensoryMemory
+from supermemoria.memory.working import WorkingMemory
+from supermemoria.memory.episodic import EpisodicMemory
+from supermemoria.memory.semantic import SemanticMemory
+from supermemoria.memory.procedural import ProceduralMemory
+from supermemoria.memory.emotional import EmotionalMemory
+from supermemoria.memory.prospective import ProspectiveMemory
+from supermemoria.memory.collective import CollectiveMemory
+from supermemoria.memory.strategic import StrategicMemory
 
 
 @dataclass

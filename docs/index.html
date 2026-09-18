@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Remembrance — memory infrastructure for AI agents</title>
+<title>Supermemoria — memory infrastructure for AI agents</title>
 <meta name="description" content="An open-source Python framework giving AI agents a complete nine-layer memory architecture. Pip-installable, tested, Apache 2.0.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -136,12 +136,12 @@
 
 <nav>
   <div class="wrap nav-inner">
-    <div class="brand"><span class="dot"></span> remembrance</div>
+    <div class="brand"><span class="dot"></span> supermemoria</div>
     <div class="nav-links">
       <a href="#problem">Problem</a>
       <a href="#architecture">Architecture</a>
       <a href="#start">Start</a>
-      <a class="nav-cta" href="https://github.com/ulisesguras/remembrance">GitHub ↗</a>
+      <a class="nav-cta" href="https://github.com/ulisesguras/supermemoria">GitHub ↗</a>
     </div>
   </div>
 </nav>
@@ -166,14 +166,14 @@
   <div class="wrap">
     <p class="eyebrow">Open source · Apache 2.0</p>
     <h1>Memory infrastructure for <span class="em">AI agents</span>.</h1>
-    <p class="lede">Most agents only have a context window that resets. Remembrance gives them a complete nine-layer memory architecture — so they can learn, reflect, plan, and share knowledge across a fleet.</p>
+    <p class="lede">Most agents only have a context window that resets. Supermemoria gives them a complete nine-layer memory architecture — so they can learn, reflect, plan, and share knowledge across a fleet.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#start">Get started</a>
-      <a class="btn btn-ghost" href="https://github.com/ulisesguras/remembrance">View source ↗</a>
+      <a class="btn btn-ghost" href="https://github.com/ulisesguras/supermemoria">View source ↗</a>
     </div>
     <div class="install">
       <span class="pr">$</span>
-      <span id="install-cmd">git clone github.com/ulisesguras/remembrance</span>
+      <span id="install-cmd">git clone github.com/ulisesguras/supermemoria</span>
       <button onclick="copyInstall()" id="copy-btn">copy</button>
     </div>
   </div>
@@ -234,8 +234,8 @@
     <p class="sec-lede">Instantiate <span class="mono" style="color:var(--violet)">BaseAgent</span> and every layer is wired and working. No configuration, no manual layer management.</p>
     <div class="code-wrap">
       <div class="code-bar"><i></i><i></i><i></i><span class="fn">agent.py</span></div>
-<pre><span class="c-kw">from</span> remembrance <span class="c-kw">import</span> BaseAgent, AgentConfig
-<span class="c-kw">from</span> remembrance.memory.collective <span class="c-kw">import</span> CollectiveMemory
+<pre><span class="c-kw">from</span> supermemoria <span class="c-kw">import</span> BaseAgent, AgentConfig
+<span class="c-kw">from</span> supermemoria.memory.collective <span class="c-kw">import</span> CollectiveMemory
 
 agent = <span class="c-fn">BaseAgent</span>(
     config=<span class="c-fn">AgentConfig</span>(name=<span class="c-str">"agent-01"</span>, role=<span class="c-str">"assistant"</span>, domain=<span class="c-str">"support"</span>),
@@ -259,22 +259,22 @@ agent.<span class="c-fn">reflect</span>(decision=<span class="c-str">"deductive 
     <h2 style="margin:0 auto;">Open source, installable today.</h2>
     <p class="sec-lede">Early-stage and looking for developers building agents who want to put it to work. Clone it, try it, open an issue.</p>
     <div class="cta-actions">
-      <a class="btn btn-primary" href="https://github.com/ulisesguras/remembrance">Star on GitHub ↗</a>
+      <a class="btn btn-primary" href="https://github.com/ulisesguras/supermemoria">Star on GitHub ↗</a>
       <a class="btn btn-ghost" href="mailto:ulguras@gmail.com">Get in touch</a>
     </div>
     <div class="install" style="margin:30px auto 0;">
       <span class="pr">$</span>
-      <span>cd remembrance && pip install -e .</span>
+      <span>cd supermemoria && pip install -e .</span>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap foot-inner">
-    <div class="brand" style="font-size:15px;"><span class="dot"></span> remembrance</div>
+    <div class="brand" style="font-size:15px;"><span class="dot"></span> supermemoria</div>
     <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
       <span class="badge">Apache 2.0</span>
-      <a href="https://github.com/ulisesguras/remembrance">GitHub</a>
+      <a href="https://github.com/ulisesguras/supermemoria">GitHub</a>
       <a href="mailto:ulguras@gmail.com">ulguras@gmail.com</a>
       <span>Built by Mario Ulises Guras</span>
     </div>
@@ -283,7 +283,7 @@ agent.<span class="c-fn">reflect</span>(decision=<span class="c-str">"deductive 
 
 <script>
   function copyInstall(){
-    var text = "git clone https://github.com/ulisesguras/remembrance";
+    var text = "git clone https://github.com/ulisesguras/supermemoria";
     navigator.clipboard.writeText(text).then(function(){
       var b = document.getElementById('copy-btn');
       b.textContent = "copied";

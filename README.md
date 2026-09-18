@@ -1,13 +1,13 @@
-# remembrance
+# supermemoria
 
-[![Tests](https://github.com/ulisesguras/remembrance/actions/workflows/tests.yml/badge.svg)](https://github.com/ulisesguras/remembrance/actions/workflows/tests.yml)
+[![Tests](https://github.com/ulisesguras/supermemoria/actions/workflows/tests.yml/badge.svg)](https://github.com/ulisesguras/supermemoria/actions/workflows/tests.yml)
 [![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/)
 
 > An agent that remembers — not just what happened, but what it knows, how it feels, what it plans to do, and what the whole swarm has learned together.
 
 Most AI agents have one kind of memory: a context window that resets.
 
-**remembrance** is a Python framework for building agents with nine distinct memory layers, organized across three cognitive dimensions — a synthesis of established cognitive-science memory models applied to AI agent architecture.
+**supermemoria** is a Python framework for building agents with nine distinct memory layers, organized across three cognitive dimensions — a synthesis of established cognitive-science memory models applied to AI agent architecture.
 
 ---
 
@@ -43,7 +43,7 @@ Most AI agents have one kind of memory: a context window that resets.
 ## Architecture
 
 ```
-remembrance/
+supermemoria/
 ├── memory/
 │   ├── sensory.py        ← raw input buffer, TTL-based decay
 │   ├── working.py        ← priority scratchpad, capacity-limited
@@ -90,8 +90,8 @@ pip install -e ".[vector]"    # adds chromadb
 ## Quickstart
 
 ```python
-from remembrance import BaseAgent, AgentConfig
-from remembrance.memory.collective import CollectiveMemory
+from supermemoria import BaseAgent, AgentConfig
+from supermemoria.memory.collective import CollectiveMemory
 
 agent = BaseAgent(
     config=AgentConfig(name="my-agent", role="assistant", domain="legal"),
@@ -140,7 +140,7 @@ print(agent.memory_summary())
 ## What Strategic Memory Looks Like
 
 ```python
-from remembrance.memory.strategic import StrategicMemory
+from supermemoria.memory.strategic import StrategicMemory
 
 sm = StrategicMemory()
 sm.register_strategy("deductive", "Rule-based reasoning", domain="legal")
@@ -161,7 +161,7 @@ print(sm.systematic_biases())  # [("inductive", -0.05)]
 ## Plugging in a Vector Backend
 
 ```python
-from remembrance.memory.semantic import SemanticMemory
+from supermemoria.memory.semantic import SemanticMemory
 import chromadb
 
 semantic = SemanticMemory()

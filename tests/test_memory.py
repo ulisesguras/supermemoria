@@ -10,15 +10,15 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
-from remembrance.memory.sensory import SensoryMemory
-from remembrance.memory.working import WorkingMemory
-from remembrance.memory.episodic import EpisodicMemory
-from remembrance.memory.semantic import SemanticMemory
-from remembrance.memory.procedural import ProceduralMemory
-from remembrance.memory.emotional import EmotionalMemory
-from remembrance.memory.prospective import ProspectiveMemory
-from remembrance.memory.collective import CollectiveMemory
-from remembrance import BaseAgent, AgentConfig
+from supermemoria.memory.sensory import SensoryMemory
+from supermemoria.memory.working import WorkingMemory
+from supermemoria.memory.episodic import EpisodicMemory
+from supermemoria.memory.semantic import SemanticMemory
+from supermemoria.memory.procedural import ProceduralMemory
+from supermemoria.memory.emotional import EmotionalMemory
+from supermemoria.memory.prospective import ProspectiveMemory
+from supermemoria.memory.collective import CollectiveMemory
+from supermemoria import BaseAgent, AgentConfig
 
 
 class TestSensoryMemory(unittest.TestCase):
@@ -227,7 +227,7 @@ if __name__ == "__main__":
 
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from remembrance.memory.strategic import StrategicMemory
+from supermemoria.memory.strategic import StrategicMemory
 
 class TestStrategicMemory(unittest.TestCase):
     def test_reflect_and_retrieve(self):

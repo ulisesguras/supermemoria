@@ -1,4 +1,4 @@
-# Contributing to remembrance
+# Contributing to supermemoria
 
 Thanks for your interest. Here's how to contribute effectively.
 
