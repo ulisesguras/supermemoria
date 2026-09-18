@@ -219,14 +219,8 @@ class TestBaseAgent(unittest.TestCase):
         self.assertEqual(len(agent.sensory), 1)
 
 
-if __name__ == "__main__":
-    unittest.main(verbosity=2)
-
-
 # ── Strategic Memory Tests ────────────────────────────────────────────────────
 
-import sys, os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from supermemoria.memory.strategic import StrategicMemory
 
 class TestStrategicMemory(unittest.TestCase):
@@ -272,3 +266,6 @@ class TestStrategicMemory(unittest.TestCase):
         self.assertEqual(rec.uses, 1)
         self.assertEqual(rec.successes, 1)
 
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)
